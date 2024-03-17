@@ -3,13 +3,13 @@
 import React from "react";
 import styled from "styled-components";
 
-import { MaxWidthContainer } from "@/components/MaxWidthContainer";
-import { ThemeToggle } from "@/components/ThemeToggle";
+import { MaxWidthContainer } from "@/ui/app/MaxWidthContainer";
+import { ThemeToggle } from "@/ui/ThemeToggle";
 
 const Container = styled.footer`
   min-height: 200px;
-  position: sticky;
-  background-color: var(--color-primary);
+  margin-top: auto;
+  background-color: var(--background);
 `;
 
 export function Footer() {

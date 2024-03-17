@@ -2,8 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 :root {
-  --font-marker: "Fira Code",
-  --font-reading: "Poppins", sans-serif;
+  font-family: var(--font-inconsolata);
 }
 
 *, *:before, *:after {

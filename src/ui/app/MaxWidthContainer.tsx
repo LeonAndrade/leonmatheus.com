@@ -4,7 +4,7 @@ export const MaxWidthContainer = styled.div`
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 1220px;
+  max-width: 1100px;
   margin-inline-start: auto;
   margin-inline-end: auto;
   padding-inline-start: 32px;
