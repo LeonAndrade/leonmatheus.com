@@ -33,13 +33,11 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
       Object.entries(themeConfig.COLORS).forEach(
         ([name, colorByTheme]: [string, { [idx: string]: string }]) => {
           const cssVarName = `--${name}`;
-
           root.style.setProperty(cssVarName, colorByTheme[newValue]);
         }
       );
       rawSetColorMode(newValue);
     }
-
     return { colorMode, setColorMode };
   }, [colorMode, rawSetColorMode]);
 
