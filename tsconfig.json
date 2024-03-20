@@ -20,7 +20,8 @@
     "baseUrl": "./",
     "paths": {
       "@/app/*": ["./src/app/*"],
-      "@/ui/*": ["./src/ui/*"],
+      "@/helpers/*": ["./src/helpers/*"],
+      "@/components/*": ["./src/components/*"],
       "@/styles/*": ["./src/styles/*"],
       "@/providers/*": ["./src/providers/*"],
       "@/public/*": ["./src/public/*"],
