@@ -3,7 +3,6 @@ function setColorByTheme() {
   const colors = "{{COLORS}}";
   const colorModeKey = "{{COLOR_MODE_KEY}}";
   const colorModeCssProp = "{{COLOR_MODE_CSS_PROP}}";
-
   const hasSystemPreference = window.matchMedia("(prefers-color-scheme: dark");
   const prefersDark = hasSystemPreference.matches;
   const persistedPreference = localStorage.getItem(colorModeKey);
