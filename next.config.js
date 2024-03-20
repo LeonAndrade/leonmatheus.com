@@ -3,6 +3,7 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   experimental: {
     mdxRs: true,
+    outputFileTracingIncludes: { "./*": ["./content/**/*"] },
   },
   reactStrictMode: true,
   compiler: {
