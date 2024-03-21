@@ -5,16 +5,23 @@
   @media (min-width: 769px) {
     height: 100px;
   }
- }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .nav {
   display: flex;
-  gap: 1rem;
- }
+  flex-direction: row;
+  gap: 2rem;
+}
 
 .link {
   font-size: 2rem;
   text-decoration: none;
   color: var(--foreground);
- }
-
+}

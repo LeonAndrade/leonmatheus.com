@@ -1,5 +1,8 @@
-.button {
-  margin: 1.5rem;
+.theme {
+  border: 1px solid red;
   width: 8rem;
-  height: 2rem;
-};
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}

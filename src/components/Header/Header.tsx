@@ -1,19 +1,22 @@
 import React from "react";
 import Link from "next/link";
 
-import styles from "./Header.module.css";
-
 import MaxWidthContainer from "@/components/MaxWidthContainer";
+import ThemeToggle from "@/components/ThemeToggle";
+import styles from "./Header.module.css";
 
 function Header() {
   return (
     <header className={styles.header}>
       <MaxWidthContainer>
-        <nav>
-          <Link className={styles.link} href="/">Home</Link>
-          <Link className={styles.link} href="/writtings">Writtings</Link>
-          <Link className={styles.link} href="/about">About</Link>
-        </nav>
+        <div className={styles.wrapper}>
+          <nav className={styles.nav}>
+            <Link className={styles.link} href="/">Home</Link>
+            <Link className={styles.link} href="/writtings">Writtings</Link>
+            <Link className={styles.link} href="/about">About</Link>
+          </nav>
+          <ThemeToggle />
+        </div>
       </MaxWidthContainer>
     </header>
   )
