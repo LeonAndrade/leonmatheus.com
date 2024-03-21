@@ -1,8 +1,11 @@
 .theme {
   border: 1px solid red;
+  background: none;
   width: 8rem;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
+  color: var(--foreground);
+  background-color: var(--background);
 }
