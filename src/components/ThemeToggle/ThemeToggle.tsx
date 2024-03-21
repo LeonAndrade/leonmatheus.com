@@ -11,11 +11,11 @@ function ThemeToggle() {
 
   return (
     <div>
-      <div
+      <button
         className={styles.theme}
         onClick={() => setColorMode(switchTo)}>
         Theme
-      </div>
+      </button>
     </div>
   );
 }
