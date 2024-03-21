@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { getBlogPostList } from "@/helpers/file-handlers"
+
+import PostCard from "@/components/PostCard";
 
 async function Blog() {
 
@@ -8,15 +9,18 @@ async function Blog() {
   return (
     <main>
       {
-        blogPosts.map((post) => {
+        blogPosts.map(({ slug, title, abstract, publishedOn }) => {
           return (
-            <Link href={`/writtings/${post.slug}`} key={post.slug}>
-              <div key={post.slug}>{post.slug}</div>
-            </Link>
+            <PostCard
+              key={slug}
+              slug={slug}
+              title={title}
+              abstract={abstract}
+              publishedOn={publishedOn}
+            />
           )
         })
       }
-      < Link href={"/writtings/"}>Back</Link>
     </main >
   );
 }

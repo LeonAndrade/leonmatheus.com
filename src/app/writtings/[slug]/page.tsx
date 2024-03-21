@@ -1,8 +1,8 @@
 import React from "react";
-import { MDXRemote } from "next-mdx-remote/rsc";
+import Link from "next/link";
 
 import { loadBlogPost } from "@/helpers/file-handlers";
-
+import Post from "@/components/Post";
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const { frontmatter } = await loadBlogPost(params.slug);
@@ -12,18 +12,17 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 }
 
-async function Post({ params }: { params: { slug: string } }) {
-
+async function PostPage({ params }: { params: { slug: string } }) {
   const { frontmatter, content } = await loadBlogPost(params.slug);
-
   return (
-    <article>
-      <h1>{frontmatter.title}</h1>
-      <div>
-        <MDXRemote source={content} />
-      </div>
-    </article>
+    <>
+      < Link href={"/writtings/"}>Back</Link>
+      <Post
+        title={frontmatter.title}
+        content={content}
+      />
+    </>
   );
 }
 
-export default Post;
+export default PostPage;
