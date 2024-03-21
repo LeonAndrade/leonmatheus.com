@@ -12,7 +12,7 @@ function Header() {
         <div className={styles.wrapper}>
           <nav className={styles.nav}>
             <Link className={styles.link} href="/">Home</Link>
-            <Link className={styles.link} href="/writtings">Writtings</Link>
+            <Link className={styles.link} href="/writings">Writings</Link>
             <Link className={styles.link} href="/about">About</Link>
           </nav>
           <ThemeToggle />

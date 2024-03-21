@@ -7,7 +7,7 @@ async function Blog() {
   const blogPosts = await getBlogPostList();
 
   return (
-    <main>
+    <>
       {
         blogPosts.map(({ slug, title, abstract, publishedOn }) => {
           return (
@@ -21,7 +21,7 @@ async function Blog() {
           )
         })
       }
-    </main >
+    </>
   );
 }
 

@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 import { loadBlogPost } from "@/helpers/file-handlers";
 import Post from "@/components/Post";
@@ -16,7 +15,6 @@ async function PostPage({ params }: { params: { slug: string } }) {
   const { frontmatter, content } = await loadBlogPost(params.slug);
   return (
     <>
-      < Link href={"/writtings/"}>Back</Link>
       <Post
         title={frontmatter.title}
         content={content}
