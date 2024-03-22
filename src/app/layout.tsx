@@ -1,6 +1,10 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inconsolata } from "next/font/google";
+import {
+  Catamaran,
+  Fira_Code
+} from "next/font/google";
+import { clsx } from "clsx";
 
 import { ThemeFallback, ThemeScript } from "@/styles/ssr";
 import { GlobalProvider } from "@/providers/GlobalProvider";
@@ -9,9 +13,14 @@ import themeConfig from "@/styles/theme";
 import "./global.css";
 
 
-const inconsolata = Inconsolata({
+const catamaran = Catamaran({
   subsets: ["latin"],
-  variable: "--font-inconsolata",
+  variable: "--font-text",
+});
+
+const firaCode = Fira_Code({
+  subsets: ["latin"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={inconsolata.variable}
+      className={clsx(catamaran.variable, firaCode.variable)}
     >
       <head>
         <ThemeScript config={themeConfig} />
