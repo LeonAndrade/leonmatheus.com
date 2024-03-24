@@ -1,0 +1,17 @@
+.wrapper {
+  background-color: var(--background);
+}
+
+.toch2 {
+  padding-left: 8px;
+}
+
+.toch3 {
+  padding-left: 16px;
+  font-size: .8rem;
+}
+
+.toc_link {
+  text-decoration: none;
+  color: var(--color-primary);
+}

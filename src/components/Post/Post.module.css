@@ -1,3 +1,8 @@
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .title {
   color: var(--color-primary);
   margin-bottom: 1.5rem;
@@ -5,8 +10,17 @@
 }
 
 .article {
+  max-width: 48rem;
   padding-block-start: 48px;
   padding-block-end: 48px;
   padding-inline-start: 32px;
   padding-inline-end: 32px;
+}
+
+.toc {
+  flex: 1;
+  border: 1px solid red;
+  position: sticky;
+  top: 140;
+  margin-left: auto;
 }
