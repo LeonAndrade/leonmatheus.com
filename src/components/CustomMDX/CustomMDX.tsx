@@ -16,14 +16,32 @@ export function H1({ children }: Children) {
 }
 
 export function H2({ children }: Children) {
+  const content = children?.toString().toLowerCase().replaceAll(" ", "_");
+
   return (
-    <h2 className={styles.h2}>{children}</h2>
+    <h2 className={styles.h2}>
+      <a
+        id={content}
+        href={`#${content}`}
+      >
+        {children}
+      </a>
+    </h2>
   )
 }
 
 export function H3({ children }: Children) {
+  const content = children?.toString().toLowerCase().replaceAll(" ", "_");
+
   return (
-    <h3 className={styles.h3}>{children}</h3>
+    <h3 className={styles.h3}>
+      <a
+        id={content}
+        href={`#${content}`}
+      >
+        {children}
+      </a>
+    </h3>
   )
 }
 

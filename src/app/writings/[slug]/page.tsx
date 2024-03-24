@@ -13,6 +13,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 async function PostPage({ params }: { params: { slug: string } }) {
   const { frontmatter, content } = await loadBlogPost(params.slug);
+
   return (
     <>
       <Post
