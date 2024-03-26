@@ -33,6 +33,15 @@ const COLORS = {
     light: "hsl()",
     dark: "hsl()",
   },
+  "post-shadow": {
+    light: `
+      0px 1px 2px hsl(50deg 20% 50% / 0.2),
+      0px 2px 4px hsl(50deg 20% 50% / 0.2),
+      0px 4px 8px hsl(50deg 20% 50% / 0.2),
+      0px 8px 16px hsl(50deg 20% 50% / 0.2)
+    `,
+    dark: "none",
+  },
 };
 
 const themeConfig = {
