@@ -1,0 +1,17 @@
+.wrapper {
+  border-right: 4px solid #eaeaea;
+  min-width: 18rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  width: 100%;
+  text-align: center;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
+  border-bottom: 4px solid #eaeaea;
+}

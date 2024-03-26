@@ -2,7 +2,14 @@ import Link from "next/link";
 import styles from "./PostCard.module.css";
 import { format } from "date-fns";
 
-function PostCard({ slug, title, abstract, publishedOn }) {
+type PostCardProps = {
+  slug: string;
+  title: string;
+  "abstract": string;
+  publishedOn: string;
+}
+
+function PostCard({ slug, title, abstract, publishedOn }: PostCardProps) {
 
   const parsedDate = format(publishedOn, "yyyy-MM-dd");
   return (

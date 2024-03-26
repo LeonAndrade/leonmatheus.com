@@ -14,7 +14,7 @@ function ThemeToggle() {
       <button
         className={styles.theme}
         onClick={() => setColorMode(switchTo)}>
-        Theme
+        {colorMode === "dark" ? "🌚" : "🌞"}
       </button>
     </div>
   );

@@ -1,9 +1,7 @@
-import MaxWidthContainer from "@/components/MaxWidthContainer"
+import Home from "@/components/Home";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <>
-      Leon's personal website
-    </>
+    <Home />
   );
 }

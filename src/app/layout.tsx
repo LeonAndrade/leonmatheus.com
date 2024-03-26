@@ -9,6 +9,12 @@ import { clsx } from "clsx";
 import { ThemeFallback, ThemeScript } from "@/styles/ssr";
 import { GlobalProvider } from "@/providers/GlobalProvider";
 import RootStackingContext from "@/components/RootStackingContext";
+import Main from "@/components/Main";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import GlobalSidebar from "@/components/GlobalSidebar";
+import MaxWidthContainer from "@/components/MaxWidthContainer";
+import ContentContainer from "@/components/ContentContainer";
 import themeConfig from "@/styles/theme";
 import "./global.css";
 
@@ -41,7 +47,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <GlobalProvider>
           <RootStackingContext>
-            {children}
+            <Header />
+            <Main>
+              <GlobalSidebar />
+              <ContentContainer>
+                <MaxWidthContainer>
+                  {children}
+                </MaxWidthContainer>
+              </ContentContainer>
+            </Main>
+            <Footer />
           </RootStackingContext>
         </GlobalProvider>
       </body>

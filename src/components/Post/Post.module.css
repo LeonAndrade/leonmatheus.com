@@ -1,6 +1,10 @@
 .wrapper {
+  position: relative;
+  z-index: 3;
   display: flex;
   flex-direction: row-reverse;
+  margin: 2rem 0;
+  gap: 1rem;
 }
 
 .title {
@@ -15,12 +19,19 @@
   padding-block-end: 48px;
   padding-inline-start: 32px;
   padding-inline-end: 32px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: var(--post-shadow);
 }
 
 .toc {
-  flex: 1;
-  border: 1px solid red;
   position: sticky;
-  top: 140;
+  position: -webkit-sticky;
+  top: 24px;
+  width: 100%;
+  min-width: fit-content;
   margin-left: auto;
+  height: fit-content;
+  border-radius: 24px;
+  border: 2px solid #aeaeae;
 }

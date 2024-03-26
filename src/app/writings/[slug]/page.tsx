@@ -15,12 +15,10 @@ async function PostPage({ params }: { params: { slug: string } }) {
   const { frontmatter, content } = await loadBlogPost(params.slug);
 
   return (
-    <>
-      <Post
-        title={frontmatter.title}
-        content={content}
-      />
-    </>
+    <Post
+      title={frontmatter.title}
+      content={content}
+    />
   );
 }
 

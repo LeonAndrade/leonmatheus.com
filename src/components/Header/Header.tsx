@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 import MaxWidthContainer from "@/components/MaxWidthContainer";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -10,11 +9,7 @@ function Header() {
     <header className={styles.header}>
       <MaxWidthContainer>
         <div className={styles.wrapper}>
-          <nav className={styles.nav}>
-            <Link className={styles.link} href="/">Home</Link>
-            <Link className={styles.link} href="/writings">Writings</Link>
-            <Link className={styles.link} href="/about">About</Link>
-          </nav>
+          <div>Hi, I'm <strong>Leon</strong>! Welcome to my Knowledge Garden.</div>
           <ThemeToggle />
         </div>
       </MaxWidthContainer>

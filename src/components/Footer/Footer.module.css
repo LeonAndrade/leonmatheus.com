@@ -1,5 +1,5 @@
 .footer {
   min-height: 200px;
   margin-top: auto;
-  background-color: var(--background);
+  border-top: 4px solid #eaeaea;
 }
