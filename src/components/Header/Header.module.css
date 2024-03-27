@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 2px solid var(--gray_300);
+  border-bottom: 1px solid var(--background_main_inverted);
   background-color: var(--background_secondary);
   color: var(--text_color_main_inverted);
 }

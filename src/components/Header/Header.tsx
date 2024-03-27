@@ -9,7 +9,7 @@ function Header() {
     <header className={styles.header}>
       <MaxWidthContainer>
         <div className={styles.wrapper}>
-          <div>Hi, I'm <strong>Leon</strong>! Welcome to my Knowledge Garden.</div>
+          <div>🌳 Welcome to my <strong>Knowledge Garden.</strong></div>
           <ThemeToggle />
         </div>
       </MaxWidthContainer>

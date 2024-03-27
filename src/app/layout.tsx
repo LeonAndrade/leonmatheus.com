@@ -55,7 +55,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </MaxWidthContainer>
               </ContentContainer>
             </Main>
-            {/* <Footer /> */}
           </RootStackingContext>
         </GlobalProvider>
       </body>

@@ -3,7 +3,7 @@
   padding: 32px;
   margin: 32px auto;
   border-radius: 6px;
-  border: 1px solid var(--gray_200);
+  border: 1px solid var(--background_main_inverted);
 }
 
 .abstract {

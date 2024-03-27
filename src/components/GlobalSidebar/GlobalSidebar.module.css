@@ -1,5 +1,5 @@
 .wrapper {
-  border-right: 2px solid var(--background_main_inverted);
+  border-right: 1px solid var(--background_main_inverted);
   width: 42px;
   overflow: hidden;
   transition: ease-in-out .2s;

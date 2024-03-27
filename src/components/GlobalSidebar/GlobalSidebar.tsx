@@ -4,16 +4,9 @@ import styles from "./GlobalSidebar.module.css";
 import {
   IconPencil1,
   IconStar,
-  IconCode,
-  IconGear,
-  IconDisc,
   IconRocket,
-  IconEyeOpen,
   IconKeyboard,
-  IconInfo,
   IconCookie,
-  IconHobbyKnife,
-
 } from "@/components/Icon";
 
 type SidebarItemProps = {
@@ -51,6 +44,7 @@ function GlobalSidebar() {
         {
           sidebarContent.map((s) => (
             <SidebarItem
+              key={s.name}
               href={s.href}
               name={s.name}
               icon={s.icon}
