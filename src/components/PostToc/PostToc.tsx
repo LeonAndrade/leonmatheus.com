@@ -4,7 +4,6 @@ import styles from "./PostToc.module.css";
 function removeCodeBlockComments(content: string) {
   let inCodeBlock = false;
   let newMarkdown = "";
-
   for (const line of content.split("\n")) {
     if (line.startsWith("```")) {
       inCodeBlock = !inCodeBlock;
@@ -19,11 +18,9 @@ function removeCodeBlockComments(content: string) {
 
 function extractHeadings(content: string) {
   const parsed = removeCodeBlockComments(content);
-
   const pattern = /(?!(?:^``))#{1,6} (.*?)(?:\n|$)/gm;
   let match;
   const headings = [];
-
   while ((match = pattern.exec(parsed)) !== null) {
     const level = match[0].split(" ")[0].length;
     const value = match[1];

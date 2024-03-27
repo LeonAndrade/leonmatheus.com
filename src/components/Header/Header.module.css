@@ -1,5 +1,7 @@
 .header {
-  border-bottom: 4px solid #eaeaea;
+  border-bottom: 2px solid var(--gray_300);
+  background-color: var(--background_secondary);
+  color: var(--text_color_main_inverted);
 }
 
 .wrapper {
@@ -12,11 +14,10 @@
 .nav {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
 }
 
 .link {
   font-size: 1.2rem;
   text-decoration: none;
-  color: var(--foreground);
+  color: var(--text_color_main);
 }

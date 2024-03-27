@@ -1,37 +1,69 @@
 const COLOR_MODE_KEY = "color-mode";
 const INITIAL_COLOR_MODE_CSS_PROP = "--initial-color-mode";
 const COLORS = {
-  foreground: {
-    light: "hsl(208, 82%, 10%)",
-    dark: "hsl(208, 40%, 96%)",
+  gray_100: {
+    light: "hsl(88, 0%, 93%)",
+    dark: "hsl(88, 0%, 93%)",
   },
-  background: {
-    light: "hsl(208, 40%, 96%)",
-    dark: "hsl(208, 82%, 10%)",
+  gray_200: {
+    light: "hsl(88, 20%, 93%)",
+    dark: "hsl(88, 20%, 93%)",
   },
-  "blue-strong": {
-    light: "hsl()",
-    dark: "hsl(208, 41%, 25%)",
+  gray_300: {
+    light: "hsl(88, 40%, 80%)",
+    dark: "hsl(88, 40%, 93%)",
   },
-  "blue-soft": {
-    light: "hsl()",
-    dark: "hsl()",
+  gray_400: {
+    light: "hsl(88, 0%, 93%)",
+    dark: "hsl(88, 0%, 93%)",
   },
-  "yellow-strong": {
-    light: "hsl()",
-    dark: "hsl()",
+  gray_500: {
+    light: "hsl(88, 0%, 93%)",
+    dark: "hsl(88, 0%, 93%)",
   },
-  "yellow-soft": {
-    light: "hsl()",
-    dark: "hsl()",
+  gray_600: {
+    light: "hsl(88, 0%, 93%)",
+    dark: "hsl(88, 0%, 93%)",
   },
-  "green-strong": {
-    light: "hsl()",
-    dark: "hsl()",
+  blue_200: {
+    light: "hsla(216, 100%, 79%, 1)",
+    dark: "hsla(216, 100%, 79%, 1)",
   },
-  "green-soft": {
-    light: "hsl()",
-    dark: "hsl()",
+  blue_300: {
+    light: "hsla(216, 64%, 56%, 1)",
+    dark: "hsla(216, 64%, 56%, 1)",
+  },
+  green_200: {
+    light: "hsla(94, 14%, 97%, 1)",
+    dark: "hsla(94, 14%, 97%, 1)",
+  },
+  green_300: {
+    light: "hsla(94, 4%, 88%, 1)",
+    dark: "hsla(94, 4%, 88%, 1)",
+  },
+  layout_border: {
+    light: "hsla(131, 20%, 92%, 1)",
+    dark: "hsla(131, 6%, 20%, 1)",
+  },
+  text_color_main: {
+    light: "hsla(123, 0%, 7%, 1)",
+    dark: "hsla(123, 0%, 92%, 1)",
+  },
+  text_color_main_inverted: {
+    light: "hsla(123, 0%, 92%, 1)",
+    dark: "hsla(123, 0%, 7%, 1)",
+  },
+  background_main: {
+    light: "hsla(131, 20%, 92%, 1)",
+    dark: "hsla(131, 6%, 20%, 1)",
+  },
+  background_main_inverted: {
+    light: "hsla(131, 6%, 20%, 1)",
+    dark: "hsla(131, 20%, 92%, 1)",
+  },
+  background_secondary: {
+    light: "hsla(123, 19%, 38%, 1)",
+    dark: "hsla(128, 29%, 27%, 1)",
   },
   "post-shadow": {
     light: `

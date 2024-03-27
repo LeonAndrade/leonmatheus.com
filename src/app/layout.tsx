@@ -11,7 +11,6 @@ import { GlobalProvider } from "@/providers/GlobalProvider";
 import RootStackingContext from "@/components/RootStackingContext";
 import Main from "@/components/Main";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import GlobalSidebar from "@/components/GlobalSidebar";
 import MaxWidthContainer from "@/components/MaxWidthContainer";
 import ContentContainer from "@/components/ContentContainer";
@@ -56,7 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </MaxWidthContainer>
               </ContentContainer>
             </Main>
-            <Footer />
+            {/* <Footer /> */}
           </RootStackingContext>
         </GlobalProvider>
       </body>

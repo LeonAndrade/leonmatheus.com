@@ -9,6 +9,18 @@ function Home() {
       <div>
         Curious thinkerer of all things, educator, shaman, painter, mover, and who knows what else...
       </div>
+      <div>
+        Experience
+      </div>
+      <div>
+        Writtings
+      </div>
+      <div>
+        Projects
+      </div>
+      <div>
+        Digital Presence
+      </div>
     </>
   )
 }

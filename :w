@@ -14,22 +14,8 @@
   flex-direction: column;
 }
 
-.nav_link {
-  text-decoration: none;
-  color: var(--text_color_main);
-}
-
-.nav_link:hover {
-  color: var(--text_color_main_inverted);
-}
-
-.item_name {
-  height: 42px;
+.name {
   padding-inline-start: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .sidebar_item_wrapper {
@@ -41,7 +27,6 @@
 
 .sidebar_item_wrapper:hover {
   background-color: var(--background_secondary);
-  color: var(--text_color_main_inverted);
 }
 
 .icon {
@@ -49,6 +34,5 @@
   justify-content: center;
   align-items: center;
   min-width: 42px;
-  max-width: 42px;
   height: 42px;
 }

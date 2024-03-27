@@ -16,6 +16,7 @@ body {
 html {
   font-family: var(--font-text);
   font-weight: 300;
+  color: var(--text_color_main);
 }
 
 body {
