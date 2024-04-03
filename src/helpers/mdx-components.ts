@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import CodeSnippet from "@/components/CodeSnippet";
-import { Code, H1, H2, H3, P } from "@/components/CustomMDX";
+import { Blockquote, Code, H1, H2, H3, P } from "@/components/CustomMDX";
 
 // const CustomComponent = dynamic(() => import("@/components/CustomComponent"));
 
@@ -11,6 +11,7 @@ const CUSTOM_MDX_COMPONENTS = {
   p: P,
   code: Code,
   pre: CodeSnippet,
+  blockquote: Blockquote,
 };
 
 export default CUSTOM_MDX_COMPONENTS;

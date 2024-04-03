@@ -3,14 +3,17 @@
   padding: 32px;
   margin: 32px auto;
   border-radius: 6px;
-  border: 1px solid var(--background_main_inverted);
+  box-shadow: var(--post-shadow);
+  border: 1px solid var(--gray_200);
 }
 
 .abstract {
   padding: 32px;
+  font-family: var(--font-text);
 }
 
 .link {
   text-decoration: none;
+  font-family: var(--font-handwrite);
   color: var(--text_color_main);
 }

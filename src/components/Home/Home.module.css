@@ -1,57 +1,69 @@
-.home_page {
-  margin-top: 64px;
-}
-
 .page_wrapper {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.main_hero_section {
-  min-height: 420px;
+.intro {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 42px 0;
 }
 
 .hero {
-  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero_name {
-  font-style: italic;
-  font-weight: 700;
-  color: var(--background_secondary);
+.icon_wrapper {
+  /* border: 1px solid var(--background_main_inverted); */
+  border-radius: 500px;
 }
 
-.hero_sub {
-  padding-top: 42px;
-  padding-bottom: 42px;
-}
-
-.green_hero_section {
-  min-height: 240px;
-  padding: 42px;
-  border-radius: 8px;
+.description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--background_secondary);
+  height: 600px;
+  font-size: 1.6rem;
+  font-family: var(--font-handwrite_caveat);
 }
 
-.green_hero_wrapper {
-  font-style: italic;
-  font-weight: 600;
-  font-size: 4.2rem;
-  color: var(--text_color_main_inverted);
+.hero_text {
+  font-size: 3rem;
+  color: var(--background_secondary);
 }
 
-.intro_section {
+.hero_paragraph {
+  padding: 42px 0;
+}
+
+.hero_paragraph p {
+  margin: 16px 0;
+}
+
+.section_item {
+  min-width: 160px;
+  padding: 0 8px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 42px;
-  border: 1px solid var(--background_main_inverted);
+  justify-content: center;
+  border: 1px solid var(--gray_300);
+  border-left: 2px solid var(--gray_500);
+  border-bottom: 4px solid var(--gray_500);
   border-radius: 4px;
+  color: var(--background_main_inverted);
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: var(--font-handwrite_caveat);
+  transition: ease-in-out .14s;
+  box-shadow: var(--post-shadow);
+}
+
+.section_item:hover {
+  border: 1px solid var(--background_secondary);
+  border-bottom: 2px solid var(--background_secondary);
+  background-color: var(--background_tertiary);
+  box-shadow: none;
 }

@@ -15,8 +15,14 @@ function removeCodeBlockComments(content: string) {
   return newMarkdown.trim();
 }
 
+type tocItemProps = {
+  level: number;
+  value: string;
+  id: string;
+}
 
-function extractHeadings(content: string) {
+
+function extractHeadings(content: string): tocItemProps[] {
   const parsed = removeCodeBlockComments(content);
   const pattern = /(?!(?:^``))#{1,6} (.*?)(?:\n|$)/gm;
   let match;
@@ -36,20 +42,20 @@ const tocStyles: Record<number, string> = {
   4: styles.toch4,
 }
 
+const tocItem = (h: tocItemProps) => {
+  return (
+    <div key={h.id} className={tocStyles[h.level]}>
+      <a className={styles.toc_link} href={`#${h.id}`}>{h.value}</a>
+    </div>
+  )
+}
+
 function PostToc({ content }: { content: string }) {
   const headings = extractHeadings(content);
   return (
     <nav className={styles.wrapper}>
-      <strong>Table of Contents:</strong>
-      {
-        headings.map((h) => (
-          <div key={h.id} className={tocStyles[h.level]}>
-            <a
-              className={styles.toc_link}
-              href={`#${h.id}`}>{h.value}</a>
-          </div>
-        ))
-      }
+      <strong>Table of Contents</strong>
+      {headings.map(tocItem)}
     </nav>
   );
 }

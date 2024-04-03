@@ -17,6 +17,8 @@ async function PostPage({ params }: { params: { slug: string } }) {
   return (
     <Post
       title={frontmatter.title}
+      subtitle={frontmatter.subtitle}
+      abstract={frontmatter.abstract}
       content={content}
     />
   );

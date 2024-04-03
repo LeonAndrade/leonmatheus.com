@@ -1,23 +1,17 @@
 .header {
-  border-bottom: 1px solid var(--background_main_inverted);
-  background-color: var(--background_secondary);
-  color: var(--text_color_main_inverted);
-}
-
-.wrapper {
+  height: 42px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  border-bottom: 1px solid var(--background_main_inverted);
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-}
-
-.link {
-  font-size: 1.2rem;
+.header_link {
   text-decoration: none;
   color: var(--text_color_main);
+}
+
+.name {
+  font-family: var(--font-handwrite);
 }

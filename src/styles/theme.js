@@ -54,16 +54,20 @@ const COLORS = {
     dark: "hsla(123, 0%, 7%, 1)",
   },
   background_main: {
-    light: "hsla(131, 20%, 92%, 1)",
-    dark: "hsla(131, 6%, 20%, 1)",
+    light: "hsla(52, 0%, 98%, 1)",
+    dark: "hsla(195, 10%, 16%, 1)",
   },
   background_main_inverted: {
     light: "hsla(131, 6%, 20%, 1)",
-    dark: "hsla(131, 20%, 92%, 1)",
+    dark: " hsla(115, 44%, 33%, 1)",
   },
   background_secondary: {
     light: "hsla(123, 19%, 38%, 1)",
-    dark: "hsla(128, 29%, 27%, 1)",
+    dark: "hsla(115, 44%, 33%, 1)",
+  },
+  background_tertiary: {
+    light: "hsla(89, 70%, 85%, 1)",
+    dark: "hsla(89, 70%, 85%, 1)",
   },
   "post-shadow": {
     light: `
@@ -75,6 +79,14 @@ const COLORS = {
     dark: "none",
   },
 };
+
+/*
+ * hsla(236, 42%, 22%, 1) // Blue
+ * hsla(144, 43%, 12%, 1) // Green
+ * hsla(66, 73%, 9%, 1) // yellow
+ * hsla(137, 51%, 8%, 1) // dark green
+ * hsla(171, 71%, 11%, 1) // green mid
+ * */
 
 const themeConfig = {
   COLORS,

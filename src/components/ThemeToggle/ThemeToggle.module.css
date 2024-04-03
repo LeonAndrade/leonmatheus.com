@@ -1,8 +1,14 @@
 .theme {
   border: none;
+  padding: 0;
+  margin: 0;
+  height: 42px;
+  width: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: none;
-  text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--text_color_main_inverted);
+  color: var(--text_color_mainted);
 }

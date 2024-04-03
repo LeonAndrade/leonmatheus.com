@@ -14,13 +14,11 @@ function ThemeToggle() {
   const switchTo = colorMode === "dark" ? "light" : "dark";
 
   return (
-    <div>
-      <button
-        className={styles.theme}
-        onClick={() => setColorMode(switchTo)}>
-        {colorMode === "light" ? <IconSun /> : <IconMoon />}
-      </button>
-    </div>
+    <button
+      className={styles.theme}
+      onClick={() => setColorMode(switchTo)}>
+      {colorMode === "dark" ? <IconMoon /> : <IconSun />}
+    </button>
   );
 }
 

@@ -6,29 +6,46 @@
 .pre {
   font-family: var(--font-mono);
   padding: 10px;
+  max-width: 600px;
+}
+
+.heading {
+  margin: 36px 0 16px 0;
+  color: var(--background_secondary);
 }
 
 .h1 {
-  font-size: 1.75rem;
-  font-weight: 650;
-  margin-bottom: 0.5em;
+  font-size: 2rem;
 }
 
 .h2 {
-  font-size: 1.5rem;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-  font-weight: 600;
+  font-size: 2.5rem;
 }
 
 .h3 {
-  font-size: 1.25rem;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-  font-weight: 500;
+  font-size: 3rem;
 }
 
 .p {
-  font-size: 1.25rem;
-  margin-bottom: 1.5em;
+  font-size: 1.125rem;
+  padding: 16px 0;
+}
+
+.blockquote {
+  margin: 32px 0;
+  padding: 36px 24px;
+  border-radius: 0 8px 8px 0;
+  border: 1px solid var(--background_secondary);
+  border-left: 6px solid var(--background_secondary);
+  font-family: var(--font-handwrite_caveat);
+}
+
+.blockquote .p {
+  color: var(--text_color_main);
+}
+
+.header_link {
+  text-decoration: none;
+  font-family: var(--font-handwrite_caveat);
+  color: inherit;
 }

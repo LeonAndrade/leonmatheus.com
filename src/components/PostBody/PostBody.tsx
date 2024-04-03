@@ -5,7 +5,7 @@ import CUSTOM_MDX_COMPONENTS from "@/helpers/mdx-components";
 
 function PostBody({ content }: { content: string }) {
   return (
-    <section>
+    <section >
       <MDXRemote
         source={content}
         components={CUSTOM_MDX_COMPONENTS}
