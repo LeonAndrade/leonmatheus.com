@@ -1,54 +1,37 @@
-import Link from "next/link";
-
-import { IconLogo } from "@/components/Icon";
+import { IconLinkedinLogo, IconLogo, IconLogoGithub, IconTwitter } from "@/components/Icon";
 import styles from "./Home.module.css";
-
-const sections = [
-  "About",
-  "Experience",
-  "Projects",
-  "Writings",
-]
-
-function SectionsHeader({ section }: { section: string }) {
-  return (
-    <Link className={styles.section_item} href={`/${section.toLowerCase()}`}>
-      <div >{section}</div>
-    </Link>
-  )
-}
-
+import Link from "next/link";
 
 function Home() {
   return (
     <div className={styles.page_wrapper}>
-
-      <section className={styles.intro}>
-        {sections.map(s => (<SectionsHeader section={s} />))}
-      </section>
-
       <section className={styles.description}>
-        <div className={styles.hero_text}>👋 Hi, I'm <strong>Leon Matheus</strong>!</div>
+        <div className={styles.hero_text}><strong>Leon Andrade Matheus</strong></div>
         <div className={styles.hero_paragraph}>
           <p>
-            Craftsperson, Ingenious Thinker, Problem Solver.
+            Craftsperson, Ingenious Thinker, Problem Solver. <br />
+            Experienced in <strong>Analytics</strong> and <strong>Software Engineering</strong>.
           </p>
           <p>
-            I am experienced in <strong>Analytics</strong> and <strong>Sofwtare Engineering</strong>.
-          </p>
-          <p>
-            I make it easier for other people to reason about things in dense information environments.
-          </p>
-          <p>
+            Building better information systems for the world.<br />
             Currently working as a <strong>Senior Data Engineer</strong> at <strong>Globo</strong>.
           </p>
         </div>
-      </section>
-
+      </section >
       <section className={styles.hero}>
         <div className={styles.icon_wrapper}><IconLogo height={120} width={120} /></div>
       </section >
-
+      <section className={styles.social_strip}>
+        <Link href="https://www.linkedin.com/in/leon-matheus/">
+          <IconLinkedinLogo />
+        </Link>
+        <Link href="https://github.com/LeonAndrade">
+          <IconLogoGithub />
+        </Link>
+        <Link href="https://twitter.com/becoming_leon">
+          <IconTwitter />
+        </Link>
+      </section>
     </div >
   )
 }

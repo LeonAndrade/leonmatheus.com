@@ -69,6 +69,14 @@ const COLORS = {
     light: "hsla(89, 70%, 85%, 1)",
     dark: "hsla(89, 70%, 85%, 1)",
   },
+  card_border: {
+    light: "hsl(88, 20%, 93%)",
+    dark: "hsla(195, 10%, 3%, 1)",
+  },
+  card_background: {
+    light: "hsla(69, 100%, 100%, 1)",
+    dark: "hsla(195, 10%, 12%, 1)",
+  },
   "post-shadow": {
     light: `
       0px 1px 2px hsl(50deg 20% 50% / 0.2),

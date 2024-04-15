@@ -35,7 +35,7 @@ const sidebarItemMapper = (s: SidebarItemProps) => (
   </div>
 );
 
-const ThemeItem = () => (
+export const ThemeItem = () => (
   <div className={styles.sidebar_item_wrapper}>
     <div className={styles.nav_link}>
       <ThemeToggle />

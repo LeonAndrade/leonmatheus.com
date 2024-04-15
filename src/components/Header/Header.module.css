@@ -12,6 +12,4 @@
   color: var(--text_color_main);
 }
 
-.name {
-  font-family: var(--font-handwrite);
-}
+.name {}

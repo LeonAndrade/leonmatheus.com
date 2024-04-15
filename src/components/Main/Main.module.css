@@ -3,4 +3,5 @@
   flex-direction: row;
   flex: 1;
   background-color: var(--background_main);
+  transition: ease-in-out .2s;
 }

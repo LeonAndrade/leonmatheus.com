@@ -1,21 +1,18 @@
 .code {
-  font-family: var(--font-mono);
   padding: 10px;
 }
 
 .pre {
-  font-family: var(--font-mono);
   padding: 10px;
   max-width: 600px;
 }
 
 .heading {
   margin: 36px 0 16px 0;
-  color: var(--background_secondary);
 }
 
 .h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .h2 {
@@ -23,7 +20,7 @@
 }
 
 .h3 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .p {
@@ -34,10 +31,11 @@
 .blockquote {
   margin: 32px 0;
   padding: 36px 24px;
+  background-color: var(--card_background);
   border-radius: 0 8px 8px 0;
   border: 1px solid var(--background_secondary);
   border-left: 6px solid var(--background_secondary);
-  font-family: var(--font-handwrite_caveat);
+  box-shadow: var(--post-shadow);
 }
 
 .blockquote .p {
@@ -46,6 +44,5 @@
 
 .header_link {
   text-decoration: none;
-  font-family: var(--font-handwrite_caveat);
   color: inherit;
 }

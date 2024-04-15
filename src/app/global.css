@@ -48,3 +48,8 @@ h4,
 h5 {
   overflow-wrap: break-word;
 }
+
+a {
+  color: var(--text_color_main);
+  text-decoration: none;
+}

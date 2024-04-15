@@ -9,6 +9,7 @@ import {
   Shantell_Sans,
   Noto_Sans,
   Noto_Sans_Mono,
+  Indie_Flower
 } from "next/font/google";
 
 export const firaCode = Fira_Code({
@@ -41,6 +42,13 @@ export const notoMono = Noto_Sans_Mono({
 export const shantellSans = Shantell_Sans({
   subsets: ["latin"],
   variable: "--font-handwrite_shantell",
+
+});
+export const indieFlower = Indie_Flower({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
+  variable: "--font-handwrite_indie",
 });
 
 export const caveat = Caveat({
@@ -72,5 +80,6 @@ export const allFonts = clsx(
   caveat.variable,
   schoolbell.variable,
   reenie.variable,
+  indieFlower.variable
 )
 
