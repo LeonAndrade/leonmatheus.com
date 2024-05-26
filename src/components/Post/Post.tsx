@@ -6,7 +6,14 @@ import PostTitle from "@/components/PostTitle";
 
 import styles from "./Post.module.css";
 
-function Post({ title, subtitle, abstract, content }: { title: string, content: string }) {
+type PostProps = {
+  title: string,
+  abstract: string,
+  subtitle: string,
+  content: string
+}
+
+function Post({ title, subtitle, abstract, content }: PostProps) {
   return (
     <div className={styles.post_wrapper}>
       <PostTitle title={title} abstract={abstract} subtitle={subtitle} />

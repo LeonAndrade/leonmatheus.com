@@ -1,7 +1,7 @@
 import React from "react";
 
 // icon:pencil-1 | Radix Icons https://icons.radix-ui.com/ | WorkOS
-export function IconPencil1(props) {
+export function IconPencil1(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg fill="none" viewBox="0 0 15 15" height="24px" width="24px" {...props}>
       <path

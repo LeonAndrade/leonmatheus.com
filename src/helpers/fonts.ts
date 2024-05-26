@@ -42,7 +42,7 @@ export const notoMono = Noto_Sans_Mono({
 export const shantellSans = Shantell_Sans({
   subsets: ["latin"],
   variable: "--font-handwrite_shantell",
-
+  fallback: ["sans serif"]
 });
 export const indieFlower = Indie_Flower({
   weight: "400",
