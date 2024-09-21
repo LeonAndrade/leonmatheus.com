@@ -17,7 +17,11 @@ function PostCard({ slug, title, abstract, publishedOn }: PostCardProps) {
       <Link href={`/writings/${slug}`} className={styles.link}>
         <h2>{title}</h2>
         <section className={styles.abstract}>
-          {abstract}
+          {
+            abstract.length < 255
+              ? abstract
+              : `${abstract.substring(0, 255)}...`
+          }
         </section>
         <div>{parsedDate}</div>
       </Link>

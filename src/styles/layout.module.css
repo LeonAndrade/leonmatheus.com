@@ -53,6 +53,8 @@
 .main {
   flex: 1;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding-block-start: 42px;
   padding-block-end: 42px;
 }

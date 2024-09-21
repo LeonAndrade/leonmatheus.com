@@ -1,0 +1,38 @@
+---
+title: ETL e ELT
+subtitle: Porque mudamos o paradigma e qual a diferença entre os dois modelos?
+abstract: O paradigma ETL é o modelo tradicional de ingestão de dados, porém de um tempo para cá começamos a utilizar mais o modelo de ELT. Vamos explorar porque dessa mudança...
+publishedOn: 2024-04-08T10:30:00
+---
+
+## Um pouco de contexto
+
+O modelo tradicional de integração de dados em um sistema analítico ou de BI utilizava uma
+prática conhecida como ETL ou (Extract, Transform and Load).
+
+O detalhe importante é a etapa de transformação que ocorre antes da etapa de carga do dado no
+sistema de destino. Nesse modelo o dado é previamente transformado no formato desejado e só então é
+feita a carga no sistema analítico de destino.
+
+Esse modelo é comum quando estamos lidando com poucas fontes de dados sobre as quais temos maior
+controle, pois requer mais cuidado ao lidar com qualidade e integridade do dado antes do dado ser persistido.
+
+## ETL - Extract, Transform, Load
+
+![ETL](/etl.png)
+
+Nas últimas décadas o custo de processamento ficou cada vez mais acessível e deu origem a
+serviços de processamento massivo paralelo em bancos colunares resultando em um baixo custo
+para processar o dado.
+
+Por outro lado, as fontes de dados e as integrações de sistemas se tornaram cada vez mais
+complexas gerando um maior custo operacional de manter um processo de transformação em cada integração.
+
+Com isso migramos para o paradigma ELT, onde primeiro carregamos o dado o mais próximo do
+seu estado original para um Data Lake ou Data Warehouse onde esse dado é então processado
+para ser enriquecido com metadados e estrutura nos ambientes analíticos.
+
+## ELT - Extract, Load, Transform
+
+![ETL](/elt.png)
+
