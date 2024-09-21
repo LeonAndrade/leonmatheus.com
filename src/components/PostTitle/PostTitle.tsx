@@ -11,7 +11,7 @@ function PostTitle({ title, subtitle, abstract }: PostTitleProps) {
     <div className={styles.title_wrapper}>
       <h1 className={styles.title}>{title}</h1>
       <div className={styles.subtitle}>{subtitle}</div>
-      {/* <div className={styles.abstract}>{abstract}</div> */}
+      <div className={styles.abstract}>{abstract}</div>
     </div>
   )
 }
