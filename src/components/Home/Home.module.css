@@ -6,9 +6,17 @@
   flex-direction: column;
   align-items: center;
   font-family: var(--font-handwrite_reenie_beanie);
+
+  @media (max-width: 600px) {
+    max-width: 400px;
+  }
 }
 
 .hero_slogan {
   padding: 8px;
   font-size: 3.2rem;
+
+  @media (max-width: 600px) {
+    font-size: 1.2rem;
+  }
 }

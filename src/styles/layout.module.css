@@ -14,13 +14,18 @@
   margin-inline-end: auto;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 640px) {
+    padding: 8px;
+  }
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 32px;
+  padding: 32px 12px;
+  border-bottom: 1px solid #eaeaeaa0;
 }
 
 .section_item {
@@ -62,7 +67,8 @@
 .footer {
   min-height: 120px;
   margin-top: auto;
-  border-top: 2px solid #eaeaea;
+  padding: 32px 12px;
+  border-top: 1px solid #eaeaeaa0;
   display: flex;
   flex-direction: row;
   align-items: center;
